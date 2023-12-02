@@ -10,79 +10,78 @@
     content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-  <title>Weather page</title>
+    <script src="https://kit.fontawesome.com/7c6056611e.js" crossorigin="anonymous"></script>
+  <title>Weather</title>
 <script defer src="main.min.js"></script><link href="main.min.css" rel="stylesheet"></head>
 
 <body data-template="index">
-
-  <div class="hot d-none">
-    <span class="sun"></span>
-    <span class="sunx"></span>
-    <span class="sund"></span>
-  </div>
-
-  <div class="cloudy d-none">
-    <span class="cloud"></span>
-    <span class="cloudx"></span>
-    <span class="cloudx"></span>
-  </div>
-  <div class="breezy d-none">
-    <ul>
-
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-    <span class="cloudr m0"></span>
-    <span class="cloudr m"></span>
-    <span class="cloudr m1"></span>
-
-
-  </div>
-  <div class="night d-none">
-    <span class="moon"></span>
-    <span class="spot1"></span>
-    <span class="spot2"></span>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-
-  </div>
-  <div class="stormy d-none">
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-    <div class="kardanadam">
-      <span class="snowe"></span>
-      <span class="snowex"></span>
-      <span class="stick"></span>
-      <span class="stick2"></span>
+  <div class="container">
+    <div class="custom-container">
+      <div class="weather__header d-lg-flex d-block">
+        <form class="weather__search">
+          <input type="text" placeholder="Search for a city..." class="weather__searchform">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </form>
+        <div class="weather__units">
+          <span class="weather_unit_celsius">&#176C</span>
+          <span class="weather_unit_farenheit">&#176F</span>
+        </div>
+      </div>
+      <div class="weather__body">
+        <h1 class="weather__city"></h1>
+        <div class="weather__datetime">
+        </div>
+        <div class="weather__forecast"></div>
+        <div class="weather__icon">
+        </div>
+        <p class="weather__temperature">
+        </p>
+        <div class="weather__minmax">
+          <p>Min: 12&#176</p>
+          <p>Max: 16&#176</p>
+        </div>
+      </div>
+      <div class="weather__info">
+        <div class="row">
+          <div class="col-lg-6 col-12">
+            <div class="weather__card">
+              <i class="fa-solid fa-temperature-full"></i>
+              <div>
+                <p>Real Feel</p>
+                <p class="weather__realfeel">18&#176</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="weather__card">
+            <i class="fa-solid fa-droplet"></i>
+            <div>
+              <p>Humidity</p>
+              <p class="weather__humidity">18&#176</p>
+            </div>
+          </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="weather__card">
+              <i class="fa-solid fa-wind"></i>
+              <div>
+                <p>Wind</p>
+                <p class="weather__wind">18&#176</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="weather__card">
+              <i class="fa-solid fa-gauge-high"></i>
+              <div>
+                <p>Pressure</p>
+                <p class="weather__pressure">18&#176</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <div class="forms">
-    <form id="form">
-      <input type="text" id="search" placeholder="Şehrinizin adını girin" autocomplete="off">
-    </form>
-    <main id="main">
-    </main>
   </div>
 </body>
 
